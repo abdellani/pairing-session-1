@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-    <h1 id="title"> Title</h1>
-    <p id="description">description</p>
-    <form id = "survey-form">
-      <label id="name-label">Name: </label><input type="text" id="name" required placeholder="enter your name "/>
-      <label id="email-label">Email:</label><input type="email" id="email" required placeholder="enter e-mail"/>
-      <label id="number-label">Number:</label><input type="number" id="number" min="1" max="10" placeholder="enter phone number"/>
-      <label>Select: </label><select id="dropdown">
-        <option>Developer</option>
-        <option>Tester </option>
-      </select>
-      <input type="radio" name="group1" value="Option1">Option 1
-      <input type="radio" name="group1" value="Option2">Option 2
-      <input type="radio" name="group1" value="Option3">Option 3
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
 
-      <input type="checkbox" name="group2" value="Option1">Option 1
-      <input type="checkbox" name="group2" value="Option2">Option 2
-      <input type="checkbox" name="group2" value="Option3">Option 3
+<body>
+  <h1 id="title"> Title</h1>
+  <p id="description">description</p>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label">Name: </label><input type="text" id="name" class="form-control"  required placeholder="enter your name " />
+    </div>
+    <div class="form-group">
+      <label id="email-label">Email:</label><input type="email" id="email" class="form-control"  required placeholder="enter e-mail" />
+    </div>
+    <div class="form-group">
+      <label id="number-label">Number:</label><input type="number" id="number" class="form-control"  min="1" max="10"
+        placeholder="enter phone number" />
+    </div>
+    <div class="form-group">
+        <label>Select: </label><select id="dropdown" class="form-control">
+      <option>Developer</option>
+      <option>Tester </option>
+    </select>
+    </div>
+    <input type="radio" name="group1" value="Option1">Option 1
+    <input type="radio" name="group1" value="Option2">Option 2
+    <input type="radio" name="group1" value="Option3">Option 3
 
-      <textarea placeholder="Enter additional comments"></textarea>
-      <button id="submit">Submit</button>
+    <input type="checkbox" name="group2" value="Option1">Option 1
+    <input type="checkbox" name="group2" value="Option2">Option 2
+    <input type="checkbox" name="group2" value="Option3">Option 3
 
-    </form>
+    <textarea placeholder="Enter additional comments"></textarea>
+    <button id="submit" class="btn btn-primary">Submit</button>
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <script  src="js/index.js"></script>
-  </body>
+  </form>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
